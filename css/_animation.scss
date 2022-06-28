@@ -1,0 +1,122 @@
+.scroll-btn{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    padding: 12px 18px;
+    border-radius: 5px;
+    color: #fff;
+    border: none;
+    background-color: #ff385dd8;
+    cursor: pointer;
+    z-index: 3;
+        
+    .fa{
+        font-size: 30px;
+    }
+
+}
+
+.copy-right{
+
+    .creator-icon{
+        ul{
+            position: fixed;
+            top: 100px;     
+            left: 10px;
+
+            li{
+                list-style-type: none;
+                margin: 10px 0;
+                border-radius: 0 30px 30px 0;
+                background-color: #ff385c;
+                display: flex;
+                padding: 5px;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                color: #fff;
+                align-items: center;
+                transform: translateX(-110px);
+                transition: all 0.8s ease;
+                .media{
+                    padding: 5px 15px; 
+                   
+
+    
+                }
+
+                .icon{
+                    background-color: #fff;
+                    width: 45px;
+                    height: 45px;
+                    display: flex;      
+                    flex-wrap: wrap; 
+                    @extend %centerContent;
+                    
+                    border-radius: 50%;
+                    @extend %centerContent;
+                   
+                        .fab{
+                           color: #ff385c;
+                            font-size: 1.2rem;
+                        }   
+
+                    
+                }
+            }
+
+        }
+
+    }
+
+}
+.copy-right .creator-icon ul li:hover{
+    transform: translateX(-10px);
+}
+
+
+/*=======Animation On Image_gallery=======*/
+@mixin overLay{
+    content: "";
+    background-color: rgba(0, 0, 0, 0.329);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 18px;
+    transition: all 0.3s ease;
+    z-index: -1;
+}
+.gallery{
+
+
+    .new-york::before{
+        @include overLay();
+    }
+    .los-angeles::before{
+        @include overLay();
+
+    }
+   
+    .san-fran::before{
+        @include overLay();
+
+    }
+
+    .miami::before{
+        @include overLay();
+
+    }
+  
+    .los-angeles:hover{
+        background-size: 100%;
+        transition: all 0.8s ease;
+
+    }
+    .san-fran:hover{
+        background-size: 100%;
+        transition: all 0.8s ease;
+
+    }
+}
+

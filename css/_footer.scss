@@ -1,0 +1,103 @@
+.detail-section{
+    width: 100%;
+    padding: 100px 0;
+    background-color: #232733;
+
+    .detail-box{
+        width: 25%;
+
+        ul{
+            list-style-type: none;
+
+            li{
+                padding-bottom: 10px;
+            }
+
+        }
+        a{
+            text-decoration: none;
+        }
+    }
+
+
+
+}
+
+.detail-box{
+    padding: 0 10px;
+    .footer-logo{
+        width: 85%;
+
+        img{
+            height: auto;
+            object-fit: contain;
+            width: 100%;
+        }
+    }
+    p{
+        color: $footerText;
+    }
+    .logo-para{
+        padding: 15px 0;
+    }
+    h3{
+        color: #fff;
+        font-weight: 700;   
+        /*border-bottom: 5px solid $mainColor;*/
+    }
+    ul{
+        padding: 10px 0;
+        li{
+            line-height: 1.5;
+            color: $footerText;
+            .fas{
+                padding-right: 7px;
+            }
+            a{
+                color: $footerText;
+                font-weight: 500;
+            }
+            .fab{
+                width: 10%;
+                align-self: flex-start;
+                padding-bottom: 5px;
+            }
+            span{
+                width: 90%;
+            }
+        }
+
+    }
+    form{
+
+        input{
+            width: 100%;
+            font-size: 16px;
+            padding: 18px 10px;
+            color: #fff;
+
+            background-color: #393D48;
+            border: none;
+            outline: none;
+            margin-bottom: 20px;
+        }
+        
+        .sub-btn{
+            width: 100%;
+            @extend %customButton;
+            padding: 15px;
+            background-color: $mainColor;
+            color: #fff;
+            border: none;
+            outline: none;
+            font-size: 1rem;
+            cursor: pointer;
+            font-weight: 400;
+        }
+    }
+
+    .list{
+        width: 48%;
+    }
+
+}

@@ -1,0 +1,41 @@
+.our-partner{
+    width: 100%;
+    padding: 50px 0;
+    background-image: url(../image/png/bg-pattern-dot.png);
+
+    .partner-head{
+        text-align: center;
+
+        h2{
+            color: $blackText;
+            text-transform: uppercase;
+        }
+
+        p{
+            color: $textColor;
+        }
+    }
+    .partner-slide{
+        margin-top: 20px;
+        padding: 30px 20px;        
+        cursor: pointer;
+        position: relative;
+        z-index: 0;
+    }
+
+    .partner-logo{
+        margin: 0 5px;
+    }
+/*
+    .partner-slide::before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        background-color: #ff385d57;
+    }
+  */
+} 
