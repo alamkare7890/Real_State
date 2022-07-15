@@ -5,7 +5,8 @@
     place-content: center;
     position: relative;
     z-index: 0;
-
+    transition: all 0.4s ease;
+    cursor: pointer;
 
 }
 
@@ -33,11 +34,13 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2,400px);
     text-align: center;
+
     .new-york{
         @extend %bgProperty;
         background-image: url(../image/jpg/york.jpg);
         grid-area: 1/1/2/2; 
         @include galleryImage();
+
         
     }
     .los-angeles{
@@ -46,15 +49,12 @@
         grid-area: 1/2/2/4;
         @include galleryImage();
                   
-        background-size: 150%;
 
     }
     .san-fran{ 
         @extend %bgProperty;
         background-image: url(../image/jpg/san.jpg);
         grid-area: 2/1/2/3;
-        
-        background-size: 150%;
         @include galleryImage();
 
     }
@@ -62,7 +62,6 @@
         @extend %bgProperty;
         background-image: url(../image/jpg/miami.jpg);
         grid-area: 2/3/4/4;
-       
         @include galleryImage();
 
     }

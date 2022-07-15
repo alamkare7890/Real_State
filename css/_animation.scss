@@ -87,36 +87,30 @@
     transition: all 0.3s ease;
     z-index: -1;
 }
+.flow-hidden{
+    overflow: hidden;
+}
 .gallery{
 
 
-    .new-york::before{
-        @include overLay();
+    .new-york:hover{
+        transform: scale(1.2);
+
     }
-    .los-angeles::before{
-        @include overLay();
+    .los-angeles:hover{
+        transform: scale(1.2);
 
     }
    
-    .san-fran::before{
-        @include overLay();
+    .san-fran:hover{
+        transform: scale(1.2);
 
     }
 
-    .miami::before{
-        @include overLay();
+    .miami:hover{
+        transform: scale(1.2);
 
     }
   
-    .los-angeles:hover{
-        background-size: 100%;
-        transition: all 0.8s ease;
-
-    }
-    .san-fran:hover{
-        background-size: 100%;
-        transition: all 0.8s ease;
-
-    }
 }
 

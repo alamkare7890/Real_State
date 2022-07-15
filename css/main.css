@@ -578,6 +578,8 @@ html, body {
   place-content: center;
   position: relative;
   z-index: 0;
+  transition: all 0.4s ease;
+  cursor: pointer;
 }
 .gallery .los-angeles {
   background-image: url(../image/jpg/bg-angrl.jpg);
@@ -588,18 +590,20 @@ html, body {
   place-content: center;
   position: relative;
   z-index: 0;
-  background-size: 150%;
+  transition: all 0.4s ease;
+  cursor: pointer;
 }
 .gallery .san-fran {
   background-image: url(../image/jpg/san.jpg);
   grid-area: 2/1/2/3;
-  background-size: 150%;
   margin: 15px;
   border-radius: 18px;
   display: grid;
   place-content: center;
   position: relative;
   z-index: 0;
+  transition: all 0.4s ease;
+  cursor: pointer;
 }
 .gallery .miami {
   background-image: url(../image/jpg/miami.jpg);
@@ -610,6 +614,8 @@ html, body {
   place-content: center;
   position: relative;
   z-index: 0;
+  transition: all 0.4s ease;
+  cursor: pointer;
 }
 .gallery h3 {
   font-weight: 700;
@@ -662,9 +668,19 @@ html, body {
   border-radius: 5px;
 }
 .properties-site .popular-site .article-bg-image {
+  padding: 10px;
   min-height: 250px;
   border-radius: 5px 5px 0 0;
-  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+.properties-site .popular-site .article-bg-image .price {
+  width: 100%;
+  font-size: 0.85rem;
+}
+.properties-site .popular-site .article-bg-image .stamp {
+  width: 100%;
 }
 .properties-site .popular-site .bg-image-one {
   background-image: url(../image/jpg/b-11.jpg);
@@ -1023,61 +1039,21 @@ html, body {
 }
 
 /*=======Animation On Image_gallery=======*/
-.gallery .new-york::before {
-  content: "";
-  background-color: rgba(0, 0, 0, 0.329);
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  border-radius: 18px;
-  transition: all 0.3s ease;
-  z-index: -1;
+.flow-hidden {
+  overflow: hidden;
 }
-.gallery .los-angeles::before {
-  content: "";
-  background-color: rgba(0, 0, 0, 0.329);
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  border-radius: 18px;
-  transition: all 0.3s ease;
-  z-index: -1;
-}
-.gallery .san-fran::before {
-  content: "";
-  background-color: rgba(0, 0, 0, 0.329);
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  border-radius: 18px;
-  transition: all 0.3s ease;
-  z-index: -1;
-}
-.gallery .miami::before {
-  content: "";
-  background-color: rgba(0, 0, 0, 0.329);
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  border-radius: 18px;
-  transition: all 0.3s ease;
-  z-index: -1;
+
+.gallery .new-york:hover {
+  transform: scale(1.2);
 }
 .gallery .los-angeles:hover {
-  background-size: 100%;
-  transition: all 0.8s ease;
+  transform: scale(1.2);
 }
 .gallery .san-fran:hover {
-  background-size: 100%;
-  transition: all 0.8s ease;
+  transform: scale(1.2);
+}
+.gallery .miami:hover {
+  transform: scale(1.2);
 }
 
 @media only screen and (min-width: 1270px) and (max-width: 1920px) {
@@ -1126,31 +1102,25 @@ html, body {
   .feature-stamp, .sale-stamp {
     font-size: 0.85rem;
   }
-
   .header-content .head-btn, .showcase-space .button-box .show-more, .popular-properties .property-des .get-start, .detail-box form .sub-btn {
     padding: 15px 40px;
     font-size: 0.85rem;
   }
-
   /*==========COMMON-CLASSES========*/
   html, body {
     font-size: 22px;
   }
-
   .secondary-heading {
     padding: 20px 0;
   }
-
   .low-secondary-heading {
     padding: 20px 0;
   }
-
   .para {
     font-size: 0.85rem;
     line-height: 30px;
     padding-bottom: 20px;
   }
-
   /*===============navigation-SECTION=============*/
   .navigation .nav-icon {
     display: none;
@@ -1158,7 +1128,6 @@ html, body {
   .navigation .varticle-nav {
     display: flex;
   }
-
   /*===============description-SECTION=============*/
   .our-description {
     padding: 80px 0;
@@ -1173,20 +1142,17 @@ html, body {
   .our-description .benefit-box .benefit p {
     padding-bottom: 20px;
   }
-
   /*===============gallery-SECTION=============*/
   /*===============popular-SECTION=============*/
   .popular-properties .property-des .get-start {
     margin-top: 15px;
   }
-
   .properties-site .popular-site .article-bg-image {
     min-height: 300px;
   }
   .properties-site .popular-site .article-content {
     padding: 30px 20px 50px 20px;
   }
-
   /*===============Article-SECTION=============*/
   .article-section .blog {
     width: 32%;
@@ -1201,30 +1167,25 @@ html, body {
   .article-section .blog .client .person .profile {
     width: 35%;
   }
-
   /*===============SHowcase-SECTION=============*/
   .showcase-box .article-bg-image {
     min-height: 280px;
     padding: 20px;
   }
-
   .slick-next {
     padding: 25px 35px;
     font-size: 35px;
     right: -60px;
   }
-
   .slick-prev {
     padding: 25px 35px;
     font-size: 35px;
     left: -60px;
   }
-
   /*===============team-SECTION=============*/
   .our-team .slide-team .testimonal {
     padding: 30px 300px;
   }
-
   /*===============COMMON-SECTION=============*/
   /*===============COMMON-SECTION=============*/
   /*===============COMMON-SECTION=============*/
@@ -1240,22 +1201,18 @@ html, body {
   .feature-stamp, .sale-stamp {
     font-size: 0.85rem;
   }
-
   .header-content .head-btn, .showcase-space .button-box .show-more, .popular-properties .property-des .get-start, .detail-box form .sub-btn {
     padding: 12px 35px;
     font-size: 0.85rem;
   }
-
   /*==========COMMON-CLASSES========*/
   html, body {
     font-size: 20px;
   }
-
   .para {
     font-size: 1rem;
     line-height: 27px;
   }
-
   /*===============NavigaTION-SECTION=============*/
   .navigation .nav-icon {
     display: none;
@@ -1263,12 +1220,10 @@ html, body {
   .navigation .varticle-nav {
     display: flex;
   }
-
   /*===============HEADER-SECTION=============*/
   .header-content {
     padding: 100px 50px 50px 150px;
   }
-
   /*===============description-SECTION=============*/
   .our-description {
     padding: 50px 0;
@@ -1283,7 +1238,6 @@ html, body {
   .our-description .benefit-box .benefit p {
     padding-bottom: 20px;
   }
-
   /*===============popular-SECTION=============*/
   .properties-site .popular-site .article-bg-image {
     min-height: 280px;
@@ -1291,7 +1245,6 @@ html, body {
   .properties-site .popular-site .article-content {
     padding: 30px 20px 50px 20px;
   }
-
   /*===============Article-SECTION=============*/
   .article-section .blog {
     width: 32%;
@@ -1306,30 +1259,25 @@ html, body {
   .article-section .blog .client .person .profile {
     width: 35%;
   }
-
   /*===============SHowcase-SECTION=============*/
   .showcase-box .article-bg-image {
     min-height: 250px;
     padding: 20px;
   }
-
   .slick-next {
     padding: 25px 35px;
     font-size: 35px;
     right: -50px;
   }
-
   .slick-prev {
     padding: 25px 35px;
     font-size: 35px;
     left: -50px;
   }
-
   /*===============team-SECTION=============*/
   .our-team .slide-team .testimonal {
     padding: 30px 280px;
   }
-
   /*===============Icon-company-SECTION=============*/
   .copy-right .creator-icon ul li {
     transform: translateX(-120px);
@@ -1344,12 +1292,10 @@ html, body {
   .navigation .nav-logo {
     width: 8%;
   }
-
   /*===============HEADER-SECTION=============*/
   .header-space .header-content {
     padding: 70px 0 70px 50px;
   }
-
   /*===============description-SECTION=============*/
   .our-description .benefit-box .benefit {
     padding: 10px;
@@ -1358,7 +1304,6 @@ html, body {
   .our-description .benefit-box .benefit h3 {
     padding: 10px 0;
   }
-
   /*===============gallery-SECTION=============*/
   .gallery {
     grid-template-columns: repeat(4, 1fr);
@@ -1375,7 +1320,6 @@ html, body {
   .gallery .miami {
     grid-area: 2/3/2/5;
   }
-
   /*===============popular-SECTION=============*/
   .popular-properties .property-des {
     width: 100%;
@@ -1403,12 +1347,10 @@ html, body {
   .popular-properties .properties-site .article-content {
     padding: 35px 20px;
   }
-
   /*===============Article-SECTION=============*/
   .article-section .blog .client .person {
     width: 45%;
   }
-
   /*===============SHowcase-SECTION=============*/
   .showcase-box .article-bg-image {
     min-height: 280px;
@@ -1417,12 +1359,10 @@ html, body {
   .showcase-box .article-content {
     padding: 40px 20px;
   }
-
   /*===============team-SECTION=============*/
   .our-team .slide-team .testimonal {
     padding: 30px 160px;
   }
-
   /*==========footer===========*/
   .detail-section .detail-box {
     width: 50%;
@@ -1440,29 +1380,23 @@ html, body {
   html, body {
     font-size: 15px;
   }
-
   .para {
     font-size: 1rem;
     line-height: 22px;
   }
-
   .prime-heading {
     font-size: 2.5rem;
   }
-
   .secondary-heading {
     font-size: 1.5rem;
   }
-
   .low-secondary-heading {
     font-size: 1.2rem;
   }
-
   .header-space .header-content {
     width: 100%;
     padding: 100px 0 40px 50px;
   }
-
   .navigation .nav-icon {
     width: 15%;
   }
@@ -1484,7 +1418,6 @@ html, body {
   .navigation .team-head .person-name {
     width: 60%;
   }
-
   /*===============description-SECTION=============*/
   .our-description .benefit-box .benefit {
     padding: 10px;
@@ -1499,7 +1432,6 @@ html, body {
   .our-description .benefit-box .benefit p {
     padding-bottom: 15px;
   }
-
   /*===============gallery-SECTION=============*/
   .gallery {
     grid-template-columns: repeat(1, 1fr);
@@ -1517,7 +1449,6 @@ html, body {
   .gallery .miami {
     grid-area: 4/1/5/5;
   }
-
   /*===============popular-SECTION=============*/
   .popular-properties .properties-site {
     width: 100%;
@@ -1525,7 +1456,6 @@ html, body {
   .popular-properties .properties-site .article-content {
     padding: 30px 20px;
   }
-
   /*===============Article-SECTION=============*/
   .article-section .article-head p {
     padding-bottom: 35px;
@@ -1534,7 +1464,6 @@ html, body {
     width: 70%;
     margin: 0 auto 45px auto;
   }
-
   /*===============SHowcase-SECTION=============*/
   .showcase-box {
     margin: 0 70px;
@@ -1546,12 +1475,10 @@ html, body {
   .showcase-box .article-content {
     padding: 40px 20px;
   }
-
   /*===============team-SECTION=============*/
   .our-team .slide-team .testimonal {
     padding: 30px 90px;
   }
-
   .detail-section {
     padding: 50px 0;
   }
@@ -1574,12 +1501,10 @@ html, body {
   .prime-heading {
     font-size: 2rem;
   }
-
   .header-space .header-content {
     text-align: center;
     padding: 100px 15px 40px 15px;
   }
-
   .navigation .nav-icon {
     width: 15%;
   }
@@ -1592,7 +1517,6 @@ html, body {
   .navigation .nav-bar {
     width: 75%;
   }
-
   /*===============description-SECTION=============*/
   .our-description .benefit-box .benefit {
     padding: 10px;
@@ -1608,13 +1532,11 @@ html, body {
   .our-description .benefit-box .benefit p {
     padding-bottom: 15px;
   }
-
   /*===============gallery-SECTION=============*/
   .gallery {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(4, 250px);
   }
-
   /*===============popular-SECTION=============*/
   .popular-properties {
     padding: 35px 0;
@@ -1627,7 +1549,6 @@ html, body {
     margin: 0 auto;
     margin-bottom: 35px;
   }
-
   /*===============Article-SECTION=============*/
   .article-section .blog {
     width: 80%;
@@ -1635,7 +1556,6 @@ html, body {
   .article-section .blog .client .person {
     width: 50%;
   }
-
   /*===============SHowcase-SECTION=============*/
   .showcase-box {
     padding: 20px 0;
@@ -1648,7 +1568,6 @@ html, body {
   .showcase-box .article-content {
     padding: 30px 20px;
   }
-
   /*===============team-SECTION=============*/
   .our-team {
     padding: 30px 0;
@@ -1656,11 +1575,9 @@ html, body {
   .our-team .slide-team .testimonal {
     padding: 30px 50px;
   }
-
   .our-partner .partner-slide {
     padding: 10px 15px;
   }
-
   .detail-section {
     padding: 30px 0;
   }
@@ -1673,17 +1590,14 @@ html, body {
   .prime-heading {
     font-size: 1.8rem;
   }
-
   .bold-head {
     font-weight: 700;
     font-size: 1.5rem;
     color: #FF385C;
   }
-
   .header-space .header-content {
     padding: 50px 10px 20px 10px;
   }
-
   .navigation .nav-icon {
     width: 15%;
   }
@@ -1699,19 +1613,16 @@ html, body {
   .navigation .nav-bar {
     width: 90%;
   }
-
   /*===============description-SECTION=============*/
   .our-description .benefit-box .benefit {
     padding: 25px;
     width: 100%;
   }
-
   /*===============gallery-SECTION=============*/
   .gallery {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(4, 300px);
   }
-
   /*===============popular-SECTION=============*/
   .popular-properties {
     padding: 30px 0;
@@ -1719,12 +1630,10 @@ html, body {
   .popular-properties .properties-site .popular-site {
     width: 90%;
   }
-
   /*===============Article-SECTION=============*/
   .article-section .blog {
     width: 95%;
   }
-
   /*===============SHowcase-SECTION=============*/
   .showcase-box {
     margin: 0 10px;
@@ -1736,12 +1645,10 @@ html, body {
   .showcase-box .article-content {
     padding: 20px;
   }
-
   /*===============team-SECTION=============*/
   .our-team .slide-team .testimonal {
     padding: 30px 20px;
   }
-
   .detail-section .detail-box {
     padding: 15px 50px;
   }
@@ -1751,17 +1658,14 @@ html, body {
     width: 100%;
     padding: 0 10px;
   }
-
   /*===============popular-SECTION=============*/
   .popular-properties .properties-site .popular-site {
     width: 100%;
   }
-
   /*===============Article-SECTION=============*/
   .article-section .blog {
     width: 100%;
   }
-
   /*===============SHowcase-SECTION=============*/
   .showcase-box {
     margin: 0;
@@ -1773,7 +1677,6 @@ html, body {
   .showcase-box .article-content {
     padding: 15px;
   }
-
   /*===============team-SECTION=============*/
   .our-team .slide-team .testimonal {
     padding: 30px 10px;
