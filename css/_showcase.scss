@@ -37,10 +37,15 @@
             border-radius: 25px;
             background: linear-gradient(148deg, #fd5559 0%, #ff337d 100%);
             color: #fff;
-
+            border: none;
+            transition: all 0.5s ease-in;
             .fas{
                 padding-left: 7px;
             }
+
+        }
+        .show-more:hover{
+            box-shadow: 0 0 5px 5px $mainColor;
         }
     }
 

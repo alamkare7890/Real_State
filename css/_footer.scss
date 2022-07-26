@@ -50,6 +50,8 @@
         li{
             line-height: 1.5;
             color: $footerText;
+            justify-content: baseline;
+            flex-basis: bottom;
             .fas{
                 padding-right: 7px;
             }
@@ -81,7 +83,9 @@
             outline: none;
             margin-bottom: 20px;
         }
-        
+        input:focus{
+            box-shadow: 1px 1px 5px 5px $mainColor;
+        }
         .sub-btn{
             width: 100%;
             @extend %customButton;

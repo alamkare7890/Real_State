@@ -542,7 +542,9 @@
             padding: 100px 0  40px  50px;
 
         }
-
+        .play-box{
+            width: 100%;
+        }
        
 
     }
@@ -848,6 +850,14 @@
             padding: 50px 10px  20px  10px;
 
         }
+        .play-box{
+            padding-top: 30px; 
+
+            svg{
+                width: 100px;
+                height: 100px;
+            }
+        }
     }
 
     .navigation{
@@ -945,6 +955,15 @@
         width: 100%;
         padding: 0 10px;
     }
+    .play-box{
+        padding-top: 50px; 
+
+        svg{
+            width: 75px;
+            height: 75px;
+        }
+    }
+
 /*===============popular-SECTION=============*/
     .popular-properties{
 

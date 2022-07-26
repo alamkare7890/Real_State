@@ -7,6 +7,7 @@
     z-index: 0;
     transition: all 0.4s ease;
     cursor: pointer;
+    
 
 }
 
@@ -34,6 +35,10 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2,400px);
     text-align: center;
+
+        .image{
+            overflow: hidden;
+        }
 
     .new-york{
         @extend %bgProperty;

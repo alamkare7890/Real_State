@@ -55,8 +55,11 @@
             font-size: 0.85rem;
             padding: 10px;
             font-weight: 700;
+            transition: all 0.5s ease-in;
         }
-
+        .read-more:hover{
+            color: $headColor;
+        }
         .person{
             width: 40%;
             align-items: center;

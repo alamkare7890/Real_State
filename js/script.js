@@ -73,6 +73,8 @@ $(document).ready(function () {
       slidesToShow: 5,
       arrows: false,
       infinite: true,
+      autoplay: true,
+      autoplaySpeed: 2000,
       responsive: [
          {
             breakpoint: 1920,
@@ -155,8 +157,9 @@ $(document).ready(function () {
    
    $('#personInfo').click(function () {
 
-      $('#profileDrop').fadeIn();
+      $('#profileDrop').toggle();
    })  
+   
   
    
    
