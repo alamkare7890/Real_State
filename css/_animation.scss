@@ -113,4 +113,26 @@
     }
   
 }
+/*=========playbtn========*/
+    @keyframes glowBtn {
 
+        0%{
+            box-shadow: 0 0 3px 2px #fff;
+        }
+        25%{
+            box-shadow: 0 0 6px 4px #fff;
+
+        }
+        50%{
+            box-shadow: 0 0 9px 6px #fff;
+
+        } 
+        75%{
+            box-shadow: 0 0 12px 8px #fff;
+
+        }
+        100%{
+            box-shadow: 0 0 15px 10px #fff;
+
+        }
+    }

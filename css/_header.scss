@@ -13,7 +13,7 @@
     }
 
     .header-content{
-        width: 60%;
+        width: 70%;
     }
 
     .shape-theme{
@@ -232,7 +232,25 @@
 
 
 }
+.play-box{
+    width: 30%;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    svg{
+        width: 120px;
+        height: 120px;
+        border: 10px solid #fff;
+        border-radius:50%;
+        cursor: pointer;
+        transition: all 0.8s ease;
+        animation: glowBtn 0.8s ease infinite;
 
+    }
+
+  
+
+}
 
 
 .header-content{

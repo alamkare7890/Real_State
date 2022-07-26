@@ -44,6 +44,18 @@ html, body {
   position: relative;
 }
 
+body::-webkit-scrollbar {
+  width: 7px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(#FF385C, #C6F1FF, #666666);
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px 5px #fff;
+}
+
 .container {
   width: 95%;
   margin: 0 auto;
@@ -120,7 +132,7 @@ html, body {
   padding: 10px;
 }
 .header-space .header-content {
-  width: 60%;
+  width: 70%;
 }
 .header-space .shape-theme {
   position: absolute;
@@ -313,6 +325,23 @@ html, body {
 .navigation .personal-info li a {
   text-decoration: none;
   color: #898A8D;
+}
+
+.play-box {
+  width: 30%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.play-box svg {
+  width: 120px;
+  height: 120px;
+  border: 10px solid #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.8s ease;
+  -webkit-animation: glowBtn 0.8s ease infinite;
+          animation: glowBtn 0.8s ease infinite;
 }
 
 .header-content {
@@ -1056,6 +1085,41 @@ html, body {
   transform: scale(1.2);
 }
 
+/*=========playbtn========*/
+@-webkit-keyframes glowBtn {
+  0% {
+    box-shadow: 0 0 3px 2px #fff;
+  }
+  25% {
+    box-shadow: 0 0 6px 4px #fff;
+  }
+  50% {
+    box-shadow: 0 0 9px 6px #fff;
+  }
+  75% {
+    box-shadow: 0 0 12px 8px #fff;
+  }
+  100% {
+    box-shadow: 0 0 15px 10px #fff;
+  }
+}
+@keyframes glowBtn {
+  0% {
+    box-shadow: 0 0 3px 2px #fff;
+  }
+  25% {
+    box-shadow: 0 0 6px 4px #fff;
+  }
+  50% {
+    box-shadow: 0 0 9px 6px #fff;
+  }
+  75% {
+    box-shadow: 0 0 12px 8px #fff;
+  }
+  100% {
+    box-shadow: 0 0 15px 10px #fff;
+  }
+}
 @media only screen and (min-width: 1270px) and (max-width: 1920px) {
   .navigation {
     /*.nav-bar{
